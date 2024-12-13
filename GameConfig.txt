@@ -1,0 +1,7 @@
+games: Minecraft,Overwatch
+
+phrases: Good job!,Hello World!,Silly Boi!
+
+Minecraftcomments: sssssSSS!,oof,aw mans!,Pog
+
+Overwatchcomments: GG!, So shiny, Digglet Dig!

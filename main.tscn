@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvawns7sf0s5"]
+
+[ext_resource type="PackedScene" uid="uid://bav4dbr7bl2d3" path="res://pet.tscn" id="1_q1ctl"]
+[ext_resource type="Script" path="res://main.gd" id="1_xdwtt"]
+[ext_resource type="AudioStream" uid="uid://eu4o4300fpti" path="res://squeaks/squeaks0.wav" id="3_pidl2"]
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_xdwtt")
+PetSize = Vector2i(512, 650)
+
+[node name="pet" parent="." instance=ExtResource("1_q1ctl")]
+visibility_layer = 2
+position = Vector2(256, 400)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_pidl2")
+volume_db = 10.0
+
+[connection signal="doneWalking" from="pet" to="." method="_on_pet_done_walking"]
+[connection signal="walking" from="pet" to="." method="_on_pet_walking"]
