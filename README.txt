@@ -1,4 +1,4 @@
-This is a desktop game of my sona
+This is a desktop game of a cat like creature
 
 Current Features:
 	Walking left or right on the screen
